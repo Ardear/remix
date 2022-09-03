@@ -1,0 +1,45 @@
+module.exports = {
+  appDirectory: "app",
+  assetsBuildDirectory: "public/build",
+  ignoredRouteFiles: ["**/.DS_Store"],
+  publicPath: "/build/",
+  routes(defineRoutes) {
+    return defineRoutes((route) => {
+      route("/", "index.tsx");
+    });
+  },
+  serverDependenciesToBundle:[
+    "@milkdown/core",
+    "@milkdown/react",
+    "@milkdown/ctx",
+    "@milkdown/exception",
+    "@milkdown/transformer",
+    "@milkdown/design-system",
+    // "nanoid",
+    // "remark",
+    // "unified",
+    // "remark-parse",
+    // "remark-stringify",
+    // "bail",
+    // "mdast-util-to-markdown",
+    // "trough",
+    // "vfile",
+    // "longest-streak",
+    // "micromark-util-decode-string",
+    // "vfile-message",
+    // "zwitch",
+    // "unist-util-visit",
+    // "micromark-util-decode-numeric-character-reference",
+    // "decode-named-character-reference",
+    // "unist-util-visit-parents",
+    // "unist-util-stringify-position",
+    // "mdast-util-to-string",
+    // "mdast-util-from-markdown",
+    // "micromark-util-normalize-identifier",
+    // "character-entities",
+    // "unist-util-is",
+    // "micromark"
+  ],
+  serverBuildPath: "build/index.js",
+  serverBuildTarget: "node-cjs",
+};
