@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started 
 
-1. pnpm i
-2. pnpm dev
+1. `pnpm i`
+2. `pnpm dev`
